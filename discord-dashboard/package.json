@@ -15,6 +15,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.4.5",
     "vite": "^5.2.0"
   }
