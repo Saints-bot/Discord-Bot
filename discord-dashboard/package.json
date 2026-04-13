@@ -9,26 +9,27 @@
     "preview": "vite preview --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.1.0",
-    "@radix-ui/react-toast": "^1.2.8",
-    "@radix-ui/react-tooltip": "^1.1.8",
-    "@tanstack/react-query": "^5.90.5",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "date-fns": "^4.1.0",
-    "framer-motion": "^11.11.17",
-    "lucide-react": "^0.511.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-hook-form": "^7.57.0",
-    "wouter": "^3.3.5",
-    "zod": "^3.23.8"
+  "@hookform/resolvers": "^5.1.0",
+  "@radix-ui/react-toast": "^1.2.8",
+  "@radix-ui/react-tooltip": "^1.1.8",
+  "@tanstack/react-query": "^5.90.5",
+  "class-variance-authority": "^0.7.1",
+  "clsx": "^2.1.1",
+  "date-fns": "^4.1.0",
+  "framer-motion": "^11.11.17",
+  "lucide-react": "^0.511.0",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-hook-form": "^7.57.0",
+  "wouter": "^3.3.5",
+  "zod": "^3.23.8",
+
+  "@vitejs/plugin-react": "^4.3.1",
+  "@tailwindcss/vite": "^4.1.0"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "tailwindcss": "^4.1.0",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.0"
-  }
+  "tailwindcss": "^4.1.0",
+  "typescript": "^5.4.5",
+  "vite": "^5.2.0"
+}
 }
