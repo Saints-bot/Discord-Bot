@@ -1,0 +1,11 @@
+packages:
+  "framer-motion": "For fluid tab transitions and page animations"
+  "react-hook-form": "For robust form state management"
+  "@hookform/resolvers": "For Zod validation integration with forms"
+  "clsx": "For conditional class name merging"
+  "tailwind-merge": "For merging tailwind classes without conflicts"
+
+images:
+  - path: "artifacts/discord-dashboard/public/images/discord-abstract-bg.png"
+    description: "Deep dark navy and blurple abstract glowing mesh background, professional and sleek, resembling a high-end gaming or tech dashboard, subtle lighting"
+    aspect_ratio: "16:9"

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+:root {
+  /* Discord Dark Theme Inspired Palette */
+  --background: 226 7% 21%;      /* #313338 */
+  --foreground: 210 40% 98%;     /* #F2F3F5 */
+  
+  --card: 223 7% 20%;            /* #2b2d31 */
+  --card-foreground: 210 40% 98%;
+  
+  --popover: 223 7% 20%;
+  --popover-foreground: 210 40% 98%;
+  
+  --primary: 235 86% 65%;        /* #5865F2 (Blurple) */
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 220 7% 18%;       /* #232428 */
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 220 7% 18%;
+  --muted-foreground: 215 16% 65%; /* #949ba4 */
+  
+  --accent: 235 86% 65%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 359 83% 66%;    /* #da373c */
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 216 7% 14%;          /* #1e1f22 */
+  --input: 216 7% 14%;
+  --ring: 235 86% 65%;
+  
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    background-image: radial-gradient(circle at 50% 0%, rgba(88, 101, 242, 0.05) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply tracking-tight;
+  }
+}
+
+/* Custom Scrollbar for a more integrated feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+/* Input Color Picker styling */
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
